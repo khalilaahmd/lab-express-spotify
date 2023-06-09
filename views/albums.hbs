@@ -1,0 +1,14 @@
+<body>
+    <h1>{{albumData.items.artists.name}} Albums</h1>
+
+{{#each albumData.items}}
+    <div class="album">
+    <h2>{{name}}</h2>
+    <img src="{{images.[0].url}}" alt="{{name}}">
+
+    <!-- Button or link to show albums for the artist -->
+    <a href="/tracks/{{id}}">See Tracks</a>
+    </div>
+{{/each}}
+
+</body>
